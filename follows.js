@@ -14,7 +14,7 @@
 
 	var defaultKey		= 'sHAUFlo1OJ2DDuuErscst8dHapYmdABOsW4qP9hIiAzMtOLW', // Unique master Xively API key to be used as a default
 		defaultFeeds	= [119384], // Comma separated array of Xively Feed ID numbers
-		applicationName	= 'Boschs Home Data', // Replaces Xively logo in the header
+		applicationName	= 'HP270´s DataLog', // Replaces Xively logo in the header
 		dataDuration	= '', // Default duration of data to be displayed // ref: https://xively.com/dev/docs/api/data/read/historical_data/
 		dataInterval	= 0, // Default interval for data to be displayed (in seconds)
 		dataColor		= 'cc2a36', // CSS HEX value of color to represent data (omit leading #)
