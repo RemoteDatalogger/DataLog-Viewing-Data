@@ -14,7 +14,7 @@
 
 	var defaultKey		= 'sHAUFlo1OJ2DDuuErscst8dHapYmdABOsW4qP9hIiAzMtOLW', // Unique master Xively API key to be used as a default
 		defaultFeeds	= [119384], // Comma separated array of Xively Feed ID numbers
-		applicationName	= 'Boschs Home EquipmentData', // Replaces Xively logo in the header
+		applicationName	= 'Boschs Home Data', // Replaces Xively logo in the header
 		dataDuration	= '', // Default duration of data to be displayed // ref: https://xively.com/dev/docs/api/data/read/historical_data/
 		dataInterval	= 0, // Default interval for data to be displayed (in seconds)
 		dataColor		= 'cc2a36', // CSS HEX value of color to represent data (omit leading #)
@@ -148,7 +148,7 @@
 										element: document.querySelector('#graph-' + feedId + '-' + datastream.id),
 										width: 600,
 										height: 200,
-										renderer: 'line',
+										renderer: 'scatterplot',
 										min: parseFloat(datastream.min_value) - .25*(parseFloat(datastream.max_value) - parseFloat(datastream.min_value)),
 										max: parseFloat(datastream.max_value) + .25*(parseFloat(datastream.max_value) - parseFloat(datastream.min_value)),
 										padding: {
